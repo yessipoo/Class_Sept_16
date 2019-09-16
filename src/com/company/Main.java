@@ -6,11 +6,12 @@ public class Main {
 
         String fname;
 
-        //FileWriter fwriter = new FileWriter("names.txt", true);
+
         //PrintWriter outfile = new PrintWriter(fwriter);
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a file name for output");
         fname = input.nextLine();
+        FileWriter fwriter = new FileWriter("names.txt", true);
         PrintWriter outfile = new PrintWriter(fname);
         String name;
         String choice = "yes";
